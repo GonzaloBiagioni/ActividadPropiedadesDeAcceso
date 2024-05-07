@@ -22,22 +22,24 @@ public class Circulo : MonoBehaviour
         {
             if (cuboColisionado.Nombre == "Cubito" && !nombreCambiado)
             {
+                anim.SetBool("CirculoUp", true);
                 cuboColisionado.CambiarNombre("Circulo");
                 nombreCambiado = true;
 
                 canvasManager.MostrarMensaje("No me gusta tu nombre, ahora te llamaras Circulo");
-                anim.Play("AnimacionSaludo");
+                anim.SetBool("CirculoUp",true);
             }
             else
             {
-                canvasManager.MostrarMensaje("¡Hola, ¿qué tal?");
-                anim.Play("AnimacionAlternativa");
+                canvasManager.MostrarMensaje("¡Hola, ¿qué tal Circulo?");
+                anim.SetBool("CirculoUp", true);
             }
         }
     }
 
     void OnTriggerExit2D(Collider2D collision)
     {
+        anim.SetBool("CirculoUp", false);
         canvasManager.OcultarMensaje();
     }
 }

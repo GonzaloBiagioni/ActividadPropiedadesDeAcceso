@@ -684,7 +684,7 @@ Animator:
   m_GameObject: {fileID: 577842712}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 70205a05804933c48b78b6b872c73b41, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1035,6 +1035,7 @@ GameObject:
   - component: {fileID: 1386833320}
   - component: {fileID: 1386833319}
   - component: {fileID: 1386833322}
+  - component: {fileID: 1386833323}
   m_Layer: 0
   m_Name: Rectangulo
   m_TagString: Untagged
@@ -1168,6 +1169,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubo: {fileID: 487379115}
   canvasManager: {fileID: 2145862565}
+--- !u!95 &1386833323
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386833317}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a9026313961845944af519062534c8c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1770400927
 GameObject:
   m_ObjectHideFlags: 0
