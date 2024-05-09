@@ -25,9 +25,7 @@ public class Circulo : MonoBehaviour
                 anim.SetBool("CirculoUp", true);
                 cuboColisionado.CambiarNombre("Circulo");
                 nombreCambiado = true;
-
-                canvasManager.MostrarMensaje("No me gusta tu nombre, ahora te llamaras Circulo");
-                anim.SetBool("CirculoUp",true);
+                canvasManager.MostrarMensaje("No me gusta tu nombre, ahora te llamaras Circulo");                
             }
             else
             {
